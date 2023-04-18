@@ -1,0 +1,17 @@
+CREATE TABLE Clothing(id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER,status TEXT);
+INSERT INTO Clothing VALUES(1,"Uni_Jesus_T-Shirt",30,9.99,"In_Stock");
+INSERT INTO Clothing VALUES(2,"Mens_Jesus_Jeans",25,14.99,"In_Stock");
+INSERT INTO Clothing VALUES(3,"Polo_Shirt",10,19.99,"In_Stock");
+INSERT INTO Clothing VALUES(4,"Polo_shorts",10,19.99,"In_Stock");
+INSERT INTO Clothing VALUES(5,"Dress",43,12.99,"In_Stock");
+INSERT INTO Clothing VALUES(6,"Tank_Top",10,4.99,"In_Stock");
+INSERT INTO Clothing VALUES(7,"kids_T-Shirt",12,4.99,"In_Stock");
+INSERT INTO Clothing VALUES(8,"Boys_Jeans",8,14.99,"In_Stock");
+INSERT INTO Clothing VALUES(9,"Womens_Jesus_Jeans",15,14.99,"In_Stock");
+INSERT INTO Clothing VALUES(10,"Womens_T-Shirt",40,6.99,"In_Stock");
+INSERT INTO Clothing VALUES(11,"Mens_Shorts",12,24.99,"In_Stock");
+INSERT INTO Clothing VALUES(12,"Womens_Shorts",15,19.99,"In_Stock");
+INSERT INTO Clothing VALUES(13,"Girls_Jeans",20,9.99,"In_Stock");
+INSERT INTO Clothing VALUES(14,"Boys_Shorts",25,14.99,"In_Stock");
+INSERT INTO Clothing VALUES(15,"Girls_Shorts",20,9.99,"In_Stock");
+select* from Clothing order by price
