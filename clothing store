@@ -14,4 +14,5 @@ INSERT INTO Clothing VALUES(12,"Womens_Shorts",15,19.99,"In_Stock");
 INSERT INTO Clothing VALUES(13,"Girls_Jeans",20,9.99,"In_Stock");
 INSERT INTO Clothing VALUES(14,"Boys_Shorts",25,14.99,"In_Stock");
 INSERT INTO Clothing VALUES(15,"Girls_Shorts",20,9.99,"In_Stock");
-select* from Clothing order by price
+select* from Clothing order by price;
+select sum(price) from Clothing
