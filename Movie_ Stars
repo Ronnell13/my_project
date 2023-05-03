@@ -1,0 +1,23 @@
+create table movie_stars(id integer primary key AUTOINCREMENT, name Text,age integer,married text);
+insert into movie_stars VALUES (1,'Nicolas_Cage',59,'Married');
+insert into movie_stars VALUES(2,'Charlize_Theron',47,'Not_Married');
+insert into movie_stars VALUES(3,'Matt_Damon',52,'Married');
+insert into movie_stars VALUES(4,'Jennifer_Lopez',52,'Married');
+insert into movie_stars VALUES (5,'Will_Smith',54,'Married');
+
+
+create table movies(id integer primary key Autoincrement,name TEXT,star_id integer);
+insert into movies VALUES(1,'The_Croods',1);
+insert into movies VALUES(2,'The Huntsman: Winters War',2);
+insert into movies VALUES(3,'The Talented Mr. Ripley',3);
+insert into movies VALUES(4,'The Boy Next Door',4);
+insert into movies VALUES(5,'Suicide Squad',5);
+
+now im going to check my tables and columns.
+
+SELECT * FROM movie_stars;
+SELECT * FROM movies;
+
+now  i'm going to join the Movie_Star table to movies to show what movies each actor plays in.
+
+select movie_stars.name,movies.name from movie_stars join movies on movie_stars.id=movies.star_id;
